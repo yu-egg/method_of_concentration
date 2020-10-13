@@ -10,6 +10,7 @@
   var startTime;
   var timeLeft;
   var timeToCountDown  = 4 * 1000;
+  var timerId;
 
   function updateTimer(t) {
     var d = new Date(t);
@@ -23,11 +24,18 @@
   }
 
     function countDown() {
-      setTimeout(function(){
+      timerId = setTimeout(function(){
         // var elapsedTime = Date.now() - startTime;
         // timeLeft = timeToCountDown - elapsedTime;
         timeLeft = timeToCountDown - (Date.now() - startTime);
         // console.log(timeLeft);
+        if (timeLeft < 0) {
+          clearTimeout(timerId);
+          timeLeft = 0;
+          timeToCountDown = 0;
+          updateTimer(timeLeft);
+          return;
+        }
         updateTimer(timeLeft);
         countDown();
       }, 10);
