@@ -1,0 +1,23 @@
+<h1>アウトプット部屋</h1>
+<p>時間は最大5分、設定してスタートせよ</p>
+
+<%= form_with model: @output do |f| %>
+  <%= f.text_area :text, class:"output-text", id:"text", placeholder:"今の集中時間に学んだことを、説明するつもりで記入しよう。声に出しながら整理するとなおよし" ,rows:"10" ,maxlength:"1000" %>
+  <%= f.submit '送信' %>
+<div class="container">
+  <div id="timer">00:00.000</div>
+  <div class="controls">
+    <div id="min">Min</div>
+    <div id="sec">Sec</div>
+    <div id="reset">Reset</div>
+    <div id="start">Start</div>
+  </div>
+</div>
+<% end %>
+<%= link_to "休憩部屋", '/' %>
+<div id='outputs'>
+  <% @outputs.reverse_each do |output| %>
+    <p><%= output.text %></p>
+  <% end %>
+</div>
+
