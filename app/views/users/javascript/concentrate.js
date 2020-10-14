@@ -2,6 +2,7 @@
   'use strict';
 
   var timer = document.getElementById('timer');
+  var tenmin = document.getElementById('tenmin');
   var min = document.getElementById('min');
   var sec = document.getElementById('sec');
   var reset = document.getElementById('reset');
@@ -16,10 +17,12 @@
 
   function updateTimer(t) {
     var d = new Date(t);
+    var tm = d.getMinutes();
     var m = d.getMinutes();
     var s = d.getSeconds();
     var ms = d.getMilliseconds();
     var timerString;
+    tm = ('0' + tm).slice(-2);
     m = ('0' + m).slice(-2);
     s = ('0' + s).slice(-2);
     ms = ('00' + ms).slice(-3);
@@ -61,6 +64,17 @@
         timeToCountDown = timeLeft;
         clearTimeout(timerId);
       }
+    });
+
+    tenmin.addEventListener('click', function(){
+      if (isRunning === true) {
+        return;
+      }
+      timeToCountDown += 60 * 10000;
+      if (timeToCountDown >= 60 * 60 * 10000) {
+        timeToCountDown = 0;
+      }
+      updateTimer(timeToCountDown);
     });
 
     min.addEventListener('click', function(){

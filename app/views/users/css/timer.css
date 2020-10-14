@@ -24,9 +24,9 @@ body {
 .controls > div {
   cursor: pointer;
   user-select: none;
-  width: 80px;
+  width: 60px;
   background-color: #ddd;
-  height: 45px;
+  height: 40px;
   line-height: 45px;
   float: left;
 }

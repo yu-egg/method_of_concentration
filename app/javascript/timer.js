@@ -4,6 +4,8 @@ window.addEventListener("DOMContentLoaded", () => {
     'use strict';
 
     var timer = document.getElementById('timer');
+    var tenmin = document.getElementById('tenmin');
+    var min = document.getElementById('min');
     var min = document.getElementById('min');
     var sec = document.getElementById('sec');
     var reset = document.getElementById('reset');
@@ -63,6 +65,17 @@ window.addEventListener("DOMContentLoaded", () => {
           timeToCountDown = timeLeft;
           clearTimeout(timerId);
         }
+      });
+
+      tenmin.addEventListener('click', function(){
+        if (isRunning === true) {
+          return;
+        }
+        timeToCountDown += 60 * 10000;
+        if (timeToCountDown >= 60 * 60 * 10000) {
+          timeToCountDown = 0;
+        }
+        updateTimer(timeToCountDown);
       });
 
       min.addEventListener('click', function(){
