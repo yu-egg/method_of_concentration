@@ -1,7 +1,7 @@
 body {
   font-family: 'Courier New', sans-serif;
   font-size: 14px;
-  background-color: #eee;
+  background-color: lightskyblue;
 
 }
 
@@ -41,4 +41,17 @@ body {
 
 .controls > div:hover {
   opacity: 0.7;
+}
+
+.concentrate-room {
+  text-align: center;
+  color: darkblue;
+}
+
+.sentence {
+  text-align: center;
+}
+
+.output-room {
+  text-align: center;
 }
