@@ -1,0 +1,26 @@
+.output-title {
+text-align: center;
+color: mediumblue;
+}
+
+.output-form {
+text-align: center;
+}
+
+.output-text {
+  width: 500px;
+  height: 200px;
+}
+
+.to-rest {
+text-align: center;
+}
+
+#outputs {
+text-align: center;
+}
+
+.submit-btn {
+  margin: 10px;
+  width: 70px;
+}
