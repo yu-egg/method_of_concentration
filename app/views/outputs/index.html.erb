@@ -29,8 +29,10 @@
 <%= link_to "休憩部屋", rests_index_path %>
 </div>
 
-<div id='outputs'>
+<div class="sentence">
   <p>以下アウトプット一覧  復習としても使おう！</p>
+</div>
+<div id='outputs'>
   <% @outputs.reverse_each do |output| %>
     <p><%= output.text %></p>
   <% end %>
