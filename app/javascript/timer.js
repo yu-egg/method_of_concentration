@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
 
   (function(){
     'use strict';
@@ -104,5 +104,5 @@ window.addEventListener("DOMContentLoaded", () => {
         timeToCountDown = 0;
         updateTimer(timeToCountDown);
       });
-  })();
-})
+  })()
+});
