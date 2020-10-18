@@ -4,11 +4,6 @@ class OutputsController < ApplicationController
     @output = Output.new
   end
 
-  def new
-    @outputs = Output.all
-    @output = Output.new
-  end
-
   def create
     @output = Output.new(text: params[:output][:text])
     if @output.save
