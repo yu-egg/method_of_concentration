@@ -1,11 +1,4 @@
 
-body {
-  font-family: 'Courier New', sans-serif;
-  font-size: 14px;
-  height: 500px;
-  background-image: url("/app/assets/images/tamagawa.jpg");
-  background-position: center;
-}
 
 .container {
   margin: 20px auto;
