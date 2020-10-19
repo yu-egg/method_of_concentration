@@ -16,7 +16,10 @@
 body {
   font-family: 'Courier New', sans-serif;
   font-size: 14px;
-  height: 500px;
-  background-image: url("/app/assets/images/tamagawa.jpg");
+  height: 100%;
+  width: 100%;
+  background-image: url("https://pro-foto.jp/free/img/images_big/bck0045-066.jpg");
+  background-size: cover;
+  opacity: 0.9;
   background-position: center;
 }
