@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
 
-  (function(){
+  (function timerStart(){
     'use strict';
 
     var timer = document.getElementById('timer');
@@ -106,3 +106,5 @@ window.addEventListener("DOMContentLoaded", () => {
       });
   })()
 });
+
+window.addEventListener('load', timerStart);

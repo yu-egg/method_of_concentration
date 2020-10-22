@@ -1,40 +1,42 @@
-<div class="output-title">
-  <h1>アウトプット部屋</h1>
-</div>
-
-<div class="sentence">
-  <p>時間は最大5分、設定してスタートせよ</p>
-</div>
-
-<div class="container">
-  <div id="timer">00:00.000</div>
-  <div class="controls">
-    <div id="tenmin">tenMin</div>
-    <div id="min">Min</div>
-    <div id="sec">Sec</div>
-    <div id="reset">Reset</div>
-    <div id="start">Start</div>
+<div class="output-container">
+  <div class="output-title">
+    <h1>アウトプット部屋</h1>
   </div>
-</div>
 
-<div class="output-form">
-  <%= form_with model: @output do |f| %>
-    <%= f.text_area :text, class:"output-text", id:"text", placeholder:"今の集中時間に学んだことを、説明するつもりで記入しよう。声に出しながら整理するとなおよし" ,rows:"10" ,maxlength:"1000" %>
-    <br>
-    <%= f.submit '送信' ,class: "submit-btn" %>
-  <% end %>
-</div>
-<div class="to-rest">
-<br>
-<%= link_to "休憩部屋", rests_index_path %>
-</div>
+  <div class="sentence">
+    <p>時間は最大5分、設定してスタートせよ</p>
+  </div>
 
-<div class="sentence">
-  <p>以下アウトプット一覧  復習としても使おう！</p>
-</div>
-<div id='outputs'>
-  <% @outputs.reverse_each do |output| %>
-    <p><%= output.text %></p>
-  <% end %>
+  <div class="container">
+    <div id="timer">00:00.000</div>
+    <div class="controls">
+      <div id="tenmin">tenMin</div>
+      <div id="min">Min</div>
+      <div id="sec">Sec</div>
+      <div id="reset">Reset</div>
+      <div id="start">Start</div>
+    </div>
+  </div>
+
+  <div class="output-form">
+    <%= form_with model: @output do |f| %>
+      <%= f.text_area :text, class:"output-text", id:"text", placeholder:"今の集中時間に学んだことを、説明するつもりで記入しよう。声に出しながら整理するとなおよし" ,rows:"10" ,maxlength:"1000" %>
+      <br>
+      <%= f.submit '送信' ,class: "submit-btn" %>
+    <% end %>
+  </div>
+  <div class="to-rest">
+  <br>
+  <%= link_to "休憩部屋", rests_index_path %>
+  </div>
+
+  <div class="sentence">
+    <p>以下アウトプット一覧  復習としても使おう！</p>
+  </div>
+  <div id='outputs'>
+    <% @outputs.reverse_each do |output| %>
+      <p><%= output.text %></p>
+    <% end %>
+  </div>
 </div>
 

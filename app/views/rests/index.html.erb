@@ -1,24 +1,26 @@
-<div class="rest-top">
-  <h1>休憩部屋</h1>
-</div>
-<div class="sentence">
-  <p>休憩時間は5分間、設定してスタートせよ</p>
-</div>
-
-<div class="container">
-  <div id="timer">00:00.000</div>
-  <div class="controls">
-    <div id="tenmin">tenMin</div>
-    <div id="min">Min</div>
-    <div id="sec">Sec</div>
-    <div id="reset">Reset</div>
-    <div id="start">Start</div>
+<div class="rest-container">
+  <div class="rest-top">
+    <h1>休憩部屋</h1>
   </div>
-</div>
-<div class="to-concentrate">
-  <%= link_to "集中部屋へ", timers_index_path %>
-</div>
-<br>
-<div class="back-to-top">
-  <%= link_to "トップへ", "/" %>
+  <div class="sentence">
+    <p>休憩時間は5分間、設定してスタートせよ</p>
+  </div>
+
+  <div class="container">
+    <div id="timer">00:00.000</div>
+    <div class="controls">
+      <div id="tenmin">tenMin</div>
+      <div id="min">Min</div>
+      <div id="sec">Sec</div>
+      <div id="reset">Reset</div>
+      <div id="start">Start</div>
+    </div>
+  </div>
+  <div class="to-concentrate">
+    <%= link_to "集中部屋へ", timers_index_path %>
+  </div>
+  <br>
+  <div class="back-to-top">
+    <%= link_to "トップへ", "/" %>
+  </div>
 </div>
