@@ -18,7 +18,7 @@
 ## Description
 
 ### 詳細の説明　
-
+機能は、
 
 ## Usage
 
