@@ -5,7 +5,7 @@
 ### topは下記画像です
 ![concentrate.png](https://github.com/yu-egg/method_of_concentration/blob/master/concentrate.png?raw=true)
 
-![.png]()
+![ae11ebedc0cc4031bfb45ce4b288feb5.gif](https://github.com/yu-egg/method_of_concentration/blob/master/ae11ebedc0cc4031bfb45ce4b288feb5.gif?raw=true)
 ## 🌐 App URL
 
 ### **https://method-of-concentration.herokuapp.com/**
